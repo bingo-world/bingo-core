@@ -1,0 +1,35 @@
+{
+  "name": "bingo-core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.config.js",
+    "test:watch": "karma start karma.watch.config.js",
+    "lint": "eslint . --ext .js --ignore-path .gitignore --cache",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingo-world/bingo-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bingo-world/bingo-core/issues"
+  },
+  "homepage": "https://github.com/bingo-world/bingo-core#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.0",
+    "karma": "^1.3.0",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sinon": "^1.0.5",
+    "karma-webpack": "^1.8.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6",
+    "webpack": "^1.13.3"
+  }
+}
