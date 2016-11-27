@@ -1,8 +1,3 @@
-src
-test
-.eslintrc.js
-.gitignore
-.travis.yml
-karma.config.js
-karma.watch.config.js
-webpack.config.js
+node_modules
+.eslintcache
+npm-debug.log
