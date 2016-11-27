@@ -1,5 +1,3 @@
 language: node_js
 node_js:
   - "5.4.1"
-notifications:
-  slack: bingoworld:kxGsf92uYnPLowNfcx8wKOJM
