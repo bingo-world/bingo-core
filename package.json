@@ -2,7 +2,7 @@
   "name": "bingo-core",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bing-core.min.js",
   "scripts": {
     "test": "karma start karma.config.js",
     "test:watch": "karma start karma.watch.config.js",
