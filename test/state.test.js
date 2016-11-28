@@ -1,4 +1,6 @@
 var State = require('../src/state.js');
+var chai = require('chai');
+var sinon = require('sinon');
 var expect = chai.expect;
 
 describe('state', function () {

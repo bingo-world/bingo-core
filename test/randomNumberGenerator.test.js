@@ -1,4 +1,5 @@
 var RandomNumberGenerator = require('../src/randomNumberGenerator.js');
+var chai = require('chai');
 var expect = chai.expect;
 
 describe('randomNumberGenerator', function () {

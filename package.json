@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.config.js",
-    "test:watch": "karma start karma.watch.config.js",
-    "lint": "eslint . --ext .js --ignore-path .gitignore --cache",
-    "build": "webpack"
+    "test": "esw && mocha",
+    "test:watch": "concurrently \"esw --watch\" \"mocha --watch\""
   },
   "repository": {
     "type": "git",
@@ -21,15 +19,10 @@
   "homepage": "https://github.com/bingo-world/bingo-core#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "concurrently": "^3.1.0",
     "eslint": "^3.11.0",
-    "karma": "^1.3.0",
-    "karma-chai": "^0.1.0",
-    "karma-mocha": "^1.3.0",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "karma-sinon": "^1.0.5",
-    "karma-webpack": "^1.8.0",
+    "eslint-watch": "^2.1.14",
     "mocha": "^3.2.0",
-    "sinon": "^1.17.6",
-    "webpack": "^1.13.3"
+    "sinon": "^1.17.6"
   }
 }

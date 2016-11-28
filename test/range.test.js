@@ -1,4 +1,5 @@
 var Range = require('../src/range.js');
+var chai = require('chai');
 var expect = chai.expect;
 
 describe('range', function () {

@@ -1,4 +1,5 @@
 var Game = require('../src/game.js');
+var chai = require('chai');
 var expect = chai.expect;
 
 describe('game', function () {
