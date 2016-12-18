@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "esw && mocha",
-    "test:watch": "concurrently \"esw --watch\" \"mocha --watch\""
+    "test:watch": "concurrently \"esw --watch\" \"mocha --watch\"",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "concurrently": "^3.1.0",
     "eslint": "^3.11.0",
     "eslint-watch": "^2.1.14",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "sinon": "^1.17.6"
   }
