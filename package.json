@@ -6,7 +6,8 @@
   "scripts": {
     "test": "esw && mocha",
     "test:watch": "concurrently \"esw --watch\" \"mocha --watch\"",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "concurrently": "^3.1.0",
+    "coveralls": "^2.11.15",
     "eslint": "^3.11.0",
     "eslint-watch": "^2.1.14",
     "istanbul": "^0.4.5",
